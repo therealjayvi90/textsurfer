@@ -5,8 +5,8 @@
 ### Simple bash script to take in multiple text files, ###
 ### search the contents for known email handlers ###
 ### (@gmail, @yahoo, etc) and organize the results into ###
-### a single file. Place email-sort.sh in the same directory as ###
-### the files you want parsed. ###
+### a single file. Place textsurfer.sh in the same directory as ###
+### the files you want surfed. ###
 
 ### Creates list of unsorted usernames. List includes garbage. ###
 /usr/bin/grep -B0 username ./* --exclude email-sort.sh > user-dirty.txt
