@@ -9,14 +9,14 @@
 ### the files you want surfed. ###
 
 ### Creates list of unsorted usernames. List includes garbage. ###
-/usr/bin/grep -B0 username ./* --exclude email-sort.sh > user-dirty.txt
+/usr/bin/grep -B0 username ./* --exclude textsurfer.sh > user-dirty.txt
 
 ### Removes garbage from username list as well as old list file. ###
 sed 's/^.*:/username:/' user-dirty.txt > user-clean.txt
 rm user-dirty.txt
 
 ### Repeats previous process to create list of unsorted passwords. ###
-/usr/bin/grep -B0 password ./* --exclude email-sort.sh user-clean.txt > pass-dirty.txt
+/usr/bin/grep -B0 password ./* --exclude textsurfer.sh user-clean.txt > pass-dirty.txt
 sed 's/^.*:/password:/' pass-dirty.txt > pass-clean.txt
 rm pass-dirty.txt
 
