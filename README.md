@@ -9,6 +9,8 @@ Just a simple BASH script to automate the process of searching through large amo
 4. Open up a terminal prompt and navigate to the directory containing your files.
 5. bash textsurfer.sh
 
+This will leave you with two new files within the same directory called 'userlist.txt' and 'passlist.txt'. Both files are sorted to each other and numbered for convenience. Note that there is room for error if there are multiple instances of the same username or password, which is why I opted to leave the files separate upon completion. Just look over your files and determine for yourself which are incorrect or duplicates because each individual to use it will have a different outcome.
+
 The script uses commands to work with all files in whichever directory it is placed in. I would not recommend using it for anything but it's indended purpose, if used incorrectly it could cause a MASSIVE endless loop whereupon it will create a text file filled with exponential duplicates of itself very quickly. Think of it like this math problem:
 
 n = text-file created by endless loop
