@@ -26,3 +26,7 @@ cat pass-clean.txt | uniq -u > pass-temp.txt && cat -n pass-temp.txt > passlist.
 
 ### Removes garbage ###
 rm user-clean.txt pass-clean.txt user-temp.txt pass-temp.txt
+
+### Create directory for newly created lists and dumps lists inside ###
+mkdir Lists
+mv userlist.txt passlist.txt Lists
